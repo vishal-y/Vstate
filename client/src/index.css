@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*::-webkit-scrollbar {
+  @apply w-[5px] h-[5px];
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply rounded bg-slate-400;
+}
+
+*::-webkit-scrollbar-track {
+  @apply !bg-transparent;
+}
+
+
+.heading {
+  @apply text-3xl font-bold capitalize text-secondary dark:text-slate-300;
+}
+
+.sub-heading {
+  @apply text-primary text-sm uppercase w-fit bg-primary/20 px-3 py-[3px] rounded-full mb-3 max-w-[200px];
+}
+
+
+.btn {
+  @apply px-4 py-[0.35rem] rounded-lg transition-a sm:cursor-pointer !uppercase flex-shrink-0;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:bg-[#f7751e] shadow-md shadow-primary/60;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white hover:bg-[#02293e];
+}
+
+.icon-box {
+  @apply grid flex-shrink-0 rounded-full w-9 h-9 place-items-center hover:bg-slate-200 dark:hover:bg-hover-color-dark transition-a sm:cursor-pointer;
+}
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  @apply hidden;
+}

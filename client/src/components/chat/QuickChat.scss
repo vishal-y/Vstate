@@ -1,0 +1,74 @@
+
+.chatform {
+    bottom:0vh;
+    right:3.5vw;
+    height:60vh;
+    z-index:10000;
+    width: 25vw;
+    background-color: #f9eeeb;
+    border: 2px solid #f7751e;
+    border-radius: 2%;
+    overflow: hidden;
+    position: fixed;
+
+    
+    .chats{
+      height: 90%;
+    }
+  
+    .chatInp{
+      height: 10%;
+      display: flex;
+    }
+  
+    input{
+      flex:3;
+      border: none;
+      padding: 20px;
+      width: 70%;
+      outline: none;
+    }
+  
+    button{
+      padding: 12px 24px;
+      background-color: #f7751e;
+      cursor: pointer;
+      border: none;
+      position: relative;
+  
+      &:hover {
+        scale: 1.05;
+      }
+  
+    }
+  
+  
+    .chatUser{
+      height: 8vh;
+      background-color: #f6985a;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+  
+      .user {
+        margin-left: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 10px;
+  
+  
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+  
+    }
+  
+    
+  }

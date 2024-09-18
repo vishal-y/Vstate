@@ -1,0 +1,316 @@
+@import "../../responsive.scss";
+
+.singlePage {
+  display: flex;
+  height: 100%;
+
+  @include md {
+    flex-direction: column;
+  }
+
+  .details {
+    margin-top:1%;
+    flex: 3;
+    height: 100%;
+
+    @include md {
+      flex: none;
+      height: max-content;
+      margin-bottom: 50px;
+    }
+
+    
+
+    .sizes {
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      display: grid;
+      grid-template-columns:auto auto auto;
+      gap:10px;
+      margin:0 10px 0 0;
+      
+
+      @include lg {
+        font-size: 12px;
+      }
+
+      .size {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+    
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      
+
+      button {
+        margin-right:10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: #f6985a;        border: 1px solid #f7751e;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover{
+          scale: 1.05;
+        }
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+
+    .wrapper {
+      padding-right: 50px;
+      width: 55vw;
+
+      @include lg {
+        padding-right: 20px;
+      }
+      @include md {
+        padding-right: 0px;
+      }
+
+      .info {
+        padding: 2%;
+        border-radius: 3%;
+        background-color: #fcf5f3;
+        margin-top:30px;
+        height:27vh;
+
+        .top {
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+
+          @include sm {
+            flex-direction: column;
+            gap: 20px;
+          }
+
+          .post {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h1 {
+              font-weight: 400;
+            }
+            .address {
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              color: #888;
+              font-size: 14px;
+
+              img {
+                width: 16px;
+                height: 16px;
+              }
+            }
+            .price {
+              padding: 5px;
+              background-color: #f6985a;
+              border-radius: 5px;
+              width: max-content;
+              font-size: 20px;
+              font-weight: 300;
+
+              &:hover {
+                scale: 1.05;
+                transition: linear;
+                transition-duration: 100;
+              }
+
+            }
+          }
+          .user {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 0px 50px;
+            border-radius: 10px;
+            background-color: #f6985a;
+            font-weight: 600;
+
+            &:hover {
+              scale: 1.05;
+              transition: linear;
+              transition-duration: 100;
+            }
+
+            @include sm {
+              padding: 20px 50px;
+            }
+
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+        }
+        .bottom {
+          margin-top: 50px;
+          color: #555;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .mapDiv{
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: #fcf5f3;
+    border-radius: 5%;
+    margin-bottom:3%;
+    padding: 2% 0 2% 0;
+    font-weight: 600;
+    font-size: large;
+
+    .title{
+      display:flex;
+      width: 88%;
+      margin: 0 0 5px 0;
+    }
+
+    .mapContainer {
+      width:90%;
+      height:45vh;
+    }
+  }
+
+
+  .features {
+    top: 10vh;
+    right: 5vw;
+    width: 35vw;
+    padding:2% .5% 1% 0.5%;
+    border-radius: 5%;
+    flex: 2;
+    background-color: #fcf5f3;
+    height: 95%;
+
+    @include md {
+      flex: none;
+      height: max-content;
+      margin-bottom: 50px;
+    }
+
+   
+    .wrapper {
+      padding: 0px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @include md {
+        padding: 20px;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .feature {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+
+        .featureText {
+          span {
+            font-weight: bold;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .listVertical {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .listHorizontal {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .sizes {
+        display: flex;
+        justify-content: space-between;
+
+        @include lg {
+          font-size: 12px;
+        }
+
+        .size {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background-color: white;
+          padding: 10px;
+          border-radius: 5px;
+        }
+      }
+      
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          background-color: white;
+          border: 1px solid #f7751e;
+          border-radius: 5px;
+          cursor: pointer;
+
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
